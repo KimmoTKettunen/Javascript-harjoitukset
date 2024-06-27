@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // function Kukka (Type, Color, Amount, inStore) {
+//     this.Type = Type;
+//     this.Color = Color;
+//     this.Amount = Amount;
+//     this.inStore = inStore;
+// }
+
+// const Flower = new Kukka("Rose","Red", 5, true); // väärällä pohjalla liikenteeseen
+
+
+ class Flower {
+    constructor(Type, Color, Amount, inStores) {
+        this.Type = Type;
+        this.Color = Color;
+        this.Amount = Amount;
+        this.inStores = inStores;   // näissä voisi myös käyttää esim constructor _color, this.color = _color  
+    }
+    
+ }
+
+ let kukka1 = new Flower("Rose","Red", 5, true);
+console.log(kukka1);
+
+kukka1.Type = "Rose"; 
+kukka1.Color = "Yellow";
+kukka1.Amount = 3;
+kukka1.inStores = false;
+
+console.log(kukka1);
+
+ 
+</script>
+</html>

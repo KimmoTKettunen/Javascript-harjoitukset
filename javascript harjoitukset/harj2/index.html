@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+            const pyydettyIkä = prompt("Please enter your age:");
+
+            // muuttaa const pyydettyIkä numero muotoon (esim C# on erikseen int ja string, javassa käytetään let ja const niin ei erikseen varmisteta)
+            const ikä = Number(pyydettyIkä);
+
+            // isNan tarkistaa onko const ikä numero, ja onko numero isompi kuin 0
+            if (isNaN(ikä)) {
+                alert("Please only use numbers. if you use decimal numbers, use dot (.) instead of comma (,)");
+            } else {
+        switch (true) {
+            case (ikä < 18 || ikä > 22): 
+            console.log("Set age between 18-22: " + pyydettyIkä);
+            break;
+            case (ikä >= 18 && ikä <= 22):  //unohtui laittaa = merkki pienempi ja suurempikuin merkin kohdalle niin tuli tyhjää 18 ja 22
+            console.log("Old :)");
+            break;
+                }
+            }
+        });
+
+
+    </script>
+</body>
+</html>

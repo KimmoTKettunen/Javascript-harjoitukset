@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let string = "asuntokionapajaa" 
+        let sisaltaa = "paja";
+
+        // let leikattu = string.slice(11,15); // pitää laittaa loppunumero (15) koska muuten tulisi "pajaa"
+
+        if (string.includes(sisaltaa)) {
+            let leikattu = string.slice(11,15);
+            console.log("Origin string : " + string);
+            console.log("New string: " + leikattu) 
+        } else {
+            console.log("String not found");
+        }
+
+        function muuta(kirjain) {
+            let uusiString = '';
+            for (let i = 2; i < kirjain.length; i += 3) { // looppi, jolla tehdään tarkistus joka kolmanteen, aloitetaan ensin 2, koska jos aloitetaan 0 niin tulee *NKN**
+                let char = kirjain[i];                    // voisi myös käyttää remainder (%) kuten yleisesti näytetään esimerkissä fizzbuzz. Käytin sitä toisessa versiossa.
+                if (char === 'a') {
+                    char = '*';
+                }
+                uusiString += char;
+            }
+            return uusiString.toUpperCase();
+        }
+
+ 
+        const muutettu = muuta(string);
+        console.log(muutettu); // 
+
+    </script>
+</body>
+</html>

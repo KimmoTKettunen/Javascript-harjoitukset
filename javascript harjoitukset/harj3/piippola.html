@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+const Array = ['Dog', 'Horse', 'Cow']; // simppeli uuden Arrayn luonti,  
+let ArrayStr = Array.toString(); //muutetaan array string muotoon,  
+console.log("Array:",Array,"\nArrayStr:",ArrayStr); 
+// laitan console.log suoraan tähän niin ei tarvitse tarkistaessa erikseen kirjoittaa. Osio A) tehty.
+
+const uusiArray = Array.slice(0);
+uusiArray.splice(4, 0, "Cat", "Sheep");
+console.log("New array:",uusiArray);  
+// Osio B)  Slice kopioi, splice lisää.
+
+
+//osio C)
+
+// let checkCow = uusiArray.includes("Cow");
+// let tarkistus = uusiArray[2];
+// if (tarkistus === uusiArray[2]) {
+//     console.log("Search result: Cow, Founded")
+// } else {
+//     console.log("result not founded")
+// }
+//  testi jos arvo on Cow
+ 
+
+//osio D)
+
+// let checkCow = uusiArray.includes("Cow");
+// let tarkistus = uusiArray[3];
+// if (tarkistus === uusiArray[2]) {
+//     console.log("Search result: Cow, Founded")
+// } else {
+//     console.log("result not founded")
+// }
+ //testi jos arvo on eri kuin Cow 
+ 
+</script>
+</html>
